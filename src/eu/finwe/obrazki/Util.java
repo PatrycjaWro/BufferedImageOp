@@ -674,6 +674,32 @@ public class Util {
         
     }
     
+    static private class FiltrNicNieRobiący extends Filtr
+    {
+        private final typFiltra typ;
+
+        public FiltrNicNieRobiący(typFiltra typ) {
+            this.typ = typ;
+        }
+
+        @Override
+        public BufferedImage filter(BufferedImage src, BufferedImage dest) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public Rectangle2D getBounds2D(BufferedImage src) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public Point2D getPoint2D(Point2D srcPt, Point2D dstPt) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+    
+    
+    }
+    
     
     /* Testowanie wybranych metod;
      * klas zawierających metodę main() może być w projekcie dużo.
